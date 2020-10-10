@@ -18,8 +18,12 @@ class ChatListPresenter: ChatListInteractorToPresenterProtocol{
     func showNewButtonAction(){
         router?.showNewChat()
     }
+    
+    
 }
 
 extension ChatListPresenter: ChatListViewToPresenterProtocol{
-    
+    func viewAppeared(){
+        interactor?.getInitialViewModelArray()
+    }
 }

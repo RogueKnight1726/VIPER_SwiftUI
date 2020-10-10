@@ -11,4 +11,17 @@ import Foundation
 class ChatListInteractor: ChatListPresenterToInteractorProtocol{
     
     weak var presenter: ChatListInteractorToPresenterProtocol?
+    var firebase = ChatListFirebase()
+    
+    func getInitialViewModelArray(){
+        self.getFirebaseChatThreads()
+    }
+}
+
+
+
+extension ChatListInteractor{
+    func getFirebaseChatThreads(){
+        firebase.getChatThreadsFromFirebase()
+    }
 }

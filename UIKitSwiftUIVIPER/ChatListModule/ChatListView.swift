@@ -17,6 +17,10 @@ struct ChatListView: View {
         presenter?.showNewButtonAction()
     }
     
+    func viewAppeared(){
+        presenter?.viewAppeared()
+    }
+    
     
     var body: some View {
         ZStack {
@@ -38,6 +42,9 @@ struct ChatListView: View {
                 )
             }
             .background((Color(#colorLiteral(red: 0.9596566558, green: 0.9596566558, blue: 0.9596566558, alpha: 1))))
+            .onAppear(perform: {
+                viewAppeared()
+            })
         }
     }
 }

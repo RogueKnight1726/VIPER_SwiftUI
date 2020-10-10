@@ -12,7 +12,7 @@ protocol ChatListPresenterToViewProtocol: class{
     
 }
 protocol ChatListPresenterToInteractorProtocol: class {
-    
+    func getInitialViewModelArray()
 }
 
 protocol ChatListPresenterToRouterProtocol: class {
@@ -24,5 +24,5 @@ protocol ChatListInteractorToPresenterProtocol: class {
 }
 
 protocol ChatListViewToPresenterProtocol: class {
-    
+    func viewAppeared()
 }

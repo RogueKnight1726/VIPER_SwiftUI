@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,11 @@
 		016B91A82531E48F0086DC31 /* ChatRoomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B91A72531E48F0086DC31 /* ChatRoomPresenter.swift */; };
 		016B91AD2531E49B0086DC31 /* ChatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B91AC2531E49B0086DC31 /* ChatRoomView.swift */; };
 		016B91B52531E5980086DC31 /* ChatRoomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B91B42531E5980086DC31 /* ChatRoomRouter.swift */; };
+		01B7976F253218C500D059B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01B7976E253218C500D059B4 /* GoogleService-Info.plist */; };
+		01B797BD25321C3A00D059B4 /* ChatListFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B797BC25321C3A00D059B4 /* ChatListFirebase.swift */; };
+		2F512EBFCAC27B7B7C121770 /* Pods_UIKitSwiftUIVIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5C374882C4E75B6F8276B5 /* Pods_UIKitSwiftUIVIPER.framework */; };
+		3610EF2159F7A76F6052921A /* Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FCE47BF616A42CCDB7D917 /* Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework */; };
+		92F125531D0894CD908FF415 /* Pods_UIKitSwiftUIVIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5781670FAA6D35D22993A5B0 /* Pods_UIKitSwiftUIVIPERTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,17 @@
 		016B91A72531E48F0086DC31 /* ChatRoomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomPresenter.swift; sourceTree = "<group>"; };
 		016B91AC2531E49B0086DC31 /* ChatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomView.swift; sourceTree = "<group>"; };
 		016B91B42531E5980086DC31 /* ChatRoomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomRouter.swift; sourceTree = "<group>"; };
+		01B7976E253218C500D059B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01B797BC25321C3A00D059B4 /* ChatListFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListFirebase.swift; sourceTree = "<group>"; };
+		3F5C374882C4E75B6F8276B5 /* Pods_UIKitSwiftUIVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitSwiftUIVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5781670FAA6D35D22993A5B0 /* Pods_UIKitSwiftUIVIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitSwiftUIVIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C37EAAEDB791DCEC63DDD9 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.release.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69251BA2E1B96DC07A82CFF5 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BB251732254A1A84822062E /* Pods-UIKitSwiftUIVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPER.debug.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPER/Pods-UIKitSwiftUIVIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		71256EE0DF994EEE44F3D893 /* Pods-UIKitSwiftUIVIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPERTests.release.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPERTests/Pods-UIKitSwiftUIVIPERTests.release.xcconfig"; sourceTree = "<group>"; };
+		87FCE47BF616A42CCDB7D917 /* Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB6C19025E4DF41A20976B0 /* Pods-UIKitSwiftUIVIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPERTests.debug.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPERTests/Pods-UIKitSwiftUIVIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2859A39DC6D56079B7DD1F2 /* Pods-UIKitSwiftUIVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitSwiftUIVIPER.release.xcconfig"; path = "Target Support Files/Pods-UIKitSwiftUIVIPER/Pods-UIKitSwiftUIVIPER.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F512EBFCAC27B7B7C121770 /* Pods_UIKitSwiftUIVIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F125531D0894CD908FF415 /* Pods_UIKitSwiftUIVIPERTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3610EF2159F7A76F6052921A /* Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +150,8 @@
 				016B90A025319ABC0086DC31 /* UIKitSwiftUIVIPERTests */,
 				016B90AB25319ABC0086DC31 /* UIKitSwiftUIVIPERUITests */,
 				016B908825319AB80086DC31 /* Products */,
+				636975E17B890F0898290CC3 /* Pods */,
+				0582F6F9A4CCEE7645DBBF52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +177,7 @@
 				016B909025319ABB0086DC31 /* Assets.xcassets */,
 				016B909525319ABB0086DC31 /* LaunchScreen.storyboard */,
 				016B909825319ABB0086DC31 /* Info.plist */,
+				01B7976E253218C500D059B4 /* GoogleService-Info.plist */,
 				016B909225319ABB0086DC31 /* Preview Content */,
 			);
 			path = UIKitSwiftUIVIPER;
@@ -190,6 +212,7 @@
 		016B90BD25319AF10086DC31 /* ChatListModule */ = {
 			isa = PBXGroup;
 			children = (
+				01B797BB25321C2200D059B4 /* Firebase */,
 				016B90BE25319B060086DC31 /* ChatListBuilder.swift */,
 				016B90C325319B1D0086DC31 /* ChatListContract.swift */,
 				016B90DC2531A3670086DC31 /* ChatListRouter.swift */,
@@ -232,6 +255,37 @@
 			path = ChatRoomModule;
 			sourceTree = "<group>";
 		};
+		01B797BB25321C2200D059B4 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				01B797BC25321C3A00D059B4 /* ChatListFirebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		0582F6F9A4CCEE7645DBBF52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5C374882C4E75B6F8276B5 /* Pods_UIKitSwiftUIVIPER.framework */,
+				87FCE47BF616A42CCDB7D917 /* Pods_UIKitSwiftUIVIPER_UIKitSwiftUIVIPERUITests.framework */,
+				5781670FAA6D35D22993A5B0 /* Pods_UIKitSwiftUIVIPERTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		636975E17B890F0898290CC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BB251732254A1A84822062E /* Pods-UIKitSwiftUIVIPER.debug.xcconfig */,
+				D2859A39DC6D56079B7DD1F2 /* Pods-UIKitSwiftUIVIPER.release.xcconfig */,
+				69251BA2E1B96DC07A82CFF5 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.debug.xcconfig */,
+				65C37EAAEDB791DCEC63DDD9 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.release.xcconfig */,
+				9AB6C19025E4DF41A20976B0 /* Pods-UIKitSwiftUIVIPERTests.debug.xcconfig */,
+				71256EE0DF994EEE44F3D893 /* Pods-UIKitSwiftUIVIPERTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 016B90B125319ABC0086DC31 /* Build configuration list for PBXNativeTarget "UIKitSwiftUIVIPER" */;
 			buildPhases = (
+				B69E102B130EBC9B3166B2D0 /* [CP] Check Pods Manifest.lock */,
 				016B908325319AB80086DC31 /* Sources */,
 				016B908425319AB80086DC31 /* Frameworks */,
 				016B908525319AB80086DC31 /* Resources */,
+				99905B6B0302301AF16B6E00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 016B90B425319ABC0086DC31 /* Build configuration list for PBXNativeTarget "UIKitSwiftUIVIPERTests" */;
 			buildPhases = (
+				5BDF03EF2039F1B1943E4B9D /* [CP] Check Pods Manifest.lock */,
 				016B909925319ABC0086DC31 /* Sources */,
 				016B909A25319ABC0086DC31 /* Frameworks */,
 				016B909B25319ABC0086DC31 /* Resources */,
@@ -274,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 016B90B725319ABC0086DC31 /* Build configuration list for PBXNativeTarget "UIKitSwiftUIVIPERUITests" */;
 			buildPhases = (
+				1A826819A789354BF8182984 /* [CP] Check Pods Manifest.lock */,
 				016B90A425319ABC0086DC31 /* Sources */,
 				016B90A525319ABC0086DC31 /* Frameworks */,
 				016B90A625319ABC0086DC31 /* Resources */,
+				364C474FC762C8FEE6DCE93D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				016B909725319ABB0086DC31 /* LaunchScreen.storyboard in Resources */,
+				01B7976F253218C500D059B4 /* GoogleService-Info.plist in Resources */,
 				016B909425319ABB0086DC31 /* Preview Assets.xcassets in Resources */,
 				016B909125319ABB0086DC31 /* Assets.xcassets in Resources */,
 			);
@@ -356,6 +416,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A826819A789354BF8182984 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364C474FC762C8FEE6DCE93D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests/Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDF03EF2039F1B1943E4B9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitSwiftUIVIPERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99905B6B0302301AF16B6E00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER/Pods-UIKitSwiftUIVIPER-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER/Pods-UIKitSwiftUIVIPER-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIKitSwiftUIVIPER/Pods-UIKitSwiftUIVIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B69E102B130EBC9B3166B2D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIKitSwiftUIVIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		016B908325319AB80086DC31 /* Sources */ = {
@@ -388,6 +551,7 @@
 				016B91A82531E48F0086DC31 /* ChatRoomPresenter.swift in Sources */,
 				016B910F2531BCEE0086DC31 /* NewChatEntity.swift in Sources */,
 				016B908F25319AB80086DC31 /* ContentView.swift in Sources */,
+				01B797BD25321C3A00D059B4 /* ChatListFirebase.swift in Sources */,
 				016B90BF25319B060086DC31 /* ChatListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +717,7 @@
 		};
 		016B90B225319ABC0086DC31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB251732254A1A84822062E /* Pods-UIKitSwiftUIVIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,7 +730,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rogueknight1726.unittest.hardependencies.UIKitSwiftUIVIPER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogueknight1726.chatapplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -574,6 +739,7 @@
 		};
 		016B90B325319ABC0086DC31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2859A39DC6D56079B7DD1F2 /* Pods-UIKitSwiftUIVIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -586,7 +752,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rogueknight1726.unittest.hardependencies.UIKitSwiftUIVIPER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogueknight1726.chatapplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -595,6 +761,7 @@
 		};
 		016B90B525319ABC0086DC31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB6C19025E4DF41A20976B0 /* Pods-UIKitSwiftUIVIPERTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,6 +784,7 @@
 		};
 		016B90B625319ABC0086DC31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71256EE0DF994EEE44F3D893 /* Pods-UIKitSwiftUIVIPERTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -639,6 +807,7 @@
 		};
 		016B90B825319ABC0086DC31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69251BA2E1B96DC07A82CFF5 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +828,7 @@
 		};
 		016B90B925319ABC0086DC31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C37EAAEDB791DCEC63DDD9 /* Pods-UIKitSwiftUIVIPER-UIKitSwiftUIVIPERUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
