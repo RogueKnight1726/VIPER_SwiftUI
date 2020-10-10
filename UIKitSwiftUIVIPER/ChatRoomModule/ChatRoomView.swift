@@ -12,13 +12,10 @@ struct ChatRoomView: View {
     var presenter: ChatRoomViewToPresenterProtocol?
     
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//            .onAppear(perform: {
-//
-//            })
-        Image("picture")
-            .resizable()
-            .frame(maxWidth: .infinity,maxHeight: .infinity)
+        Text("Chat")
+            .onAppear(perform: {
+                
+            })
     }
 }
 
