@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,3 +35,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension UINavigationController: UINavigationControllerDelegate {
+
+    convenience init(rootView: AnyView) {
+        let hostingView = UIHostingController(rootView: rootView)
+        self.init(rootViewController: hostingView)
+
+        // Doing this to hide the nav bar since I am expecting SwiftUI
+        // views to be wrapped in NavigationViews in case they need nav.
+        self.delegate = self
+    }
+
+    public func pushView(view:AnyView) {
+        let hostingView = UIHostingController(rootView: view)
+        self.pushViewController(hostingView, animated: true)
+    }
+
+    public func popView() {
+        self.popViewController(animated: true)
+    }
+
+    public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        navigationController.navigationBar.isHidden = true
+    }
+}
