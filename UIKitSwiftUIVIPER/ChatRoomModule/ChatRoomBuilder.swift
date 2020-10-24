@@ -10,12 +10,12 @@ import UIKit
 import SwiftUI
 
 
-func createChatRoomModule(view: ChatRoomView){
+func createChatRoomModule() -> MyProtocol{
     
     let router = ChatRoomRouter()
     let presenter = ChatRoomPresenter()
     let interactor = ChatRoomInteractor()
-    
+    let view = ChatRoomView()
     
     presenter.interactor = interactor
 //    presenter.chatListStore = store
@@ -24,4 +24,5 @@ func createChatRoomModule(view: ChatRoomView){
     interactor.presenter = presenter
     router.presenter = presenter
     
+    return view
 }

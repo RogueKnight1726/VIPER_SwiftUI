@@ -27,7 +27,9 @@ struct ChatListView: View {
             NavigationView{
                 ScrollView(.vertical) {
                     LazyVStack(spacing: 0) {
-                        ChatListCell(unreadCount: 1)
+                        presenter?.linkBuilder(for: "Some Value") {
+                            ChatListCell(unreadCount: 1)
+                        }
                         ForEach(store.chatList) { item in
                             ChatListCell(unreadCount: 0)
                         }
@@ -45,6 +47,7 @@ struct ChatListView: View {
             .onAppear(perform: {
                 viewAppeared()
             })
+            
         }
     }
 }
@@ -61,7 +64,6 @@ struct ChatListCell: View {
     var body: some View {
         ZStack {
             Color(unreadCount == 0 ? .clear : .white)
-            NavigationLink(destination: ChatRoomView()){
                 HStack {
                     Circle()
                         .frame(width: 48, height: 48)
@@ -96,7 +98,6 @@ struct ChatListCell: View {
                 }
                 .padding(16)
                 .background(Color(.clear))
-            }
 
             
         }

@@ -17,13 +17,18 @@ func createChatListModule(with navigationController: UINavigationController) -> 
     let interactor = ChatListInteractor()
     let store = ChatListStore()
     let view = ChatListView(presenter: presenter, store: store)
+    let firebase = ChatListFirebase()
     
     presenter.interactor = interactor
     presenter.chatListStore = store
     presenter.router = router
     
     interactor.presenter = presenter
+    interactor.firebase = firebase
     router.presenter = presenter
+    
+    
+    firebase.interactor = interactor
     
     let viewController = UIHostingController(rootView: view)
     router.viewController = viewController

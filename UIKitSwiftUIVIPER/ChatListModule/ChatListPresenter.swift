@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 class ChatListPresenter: ChatListInteractorToPresenterProtocol{
@@ -25,5 +26,11 @@ class ChatListPresenter: ChatListInteractorToPresenterProtocol{
 extension ChatListPresenter: ChatListViewToPresenterProtocol{
     func viewAppeared(){
         interactor?.getInitialViewModelArray()
+    }
+    
+    func linkBuilder<Content: View>(for trip: String, @ViewBuilder content: () -> Content) -> some View {
+        NavigationLink(destination: router?.showChatDetail() as! ChatRoomView) {
+          content()
+        }
     }
 }

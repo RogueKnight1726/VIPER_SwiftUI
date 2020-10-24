@@ -9,6 +9,12 @@ import UIKit
 import SwiftUI
 
 class ChatListRouter: ChatListPresenterToRouterProtocol{
+    func showChatDetail() -> MyProtocol {
+        
+        return createChatRoomModule()
+    }
+    
+    
     func showNewChat() {
         let newChatController = createNewChatModule()
         viewController?.present(newChatController, animated: true, completion: nil)

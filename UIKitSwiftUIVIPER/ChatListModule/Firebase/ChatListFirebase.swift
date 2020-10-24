@@ -11,10 +11,13 @@ import FirebaseDatabase
 class ChatListFirebase{
     
     var ref = Database.database().reference()
+    weak var interactor: ChatListFireBaseProtocol?
     
     func getChatThreadsFromFirebase(){
-        ref.observeSingleEvent(of: .value) { [weak self] (snapshot) in
+        ref.observe(.value) { [weak self] (snapshot) in
             print(snapshot)
+            let values = snapshot.value as? [String : AnyObject] ?? [:]
+            self?.interactor?.recievedThreadList(threadListResponse: values)
         }
     }
 }

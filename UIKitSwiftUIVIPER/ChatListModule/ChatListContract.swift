@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 protocol ChatListPresenterToViewProtocol: class{
@@ -17,6 +18,7 @@ protocol ChatListPresenterToInteractorProtocol: class {
 
 protocol ChatListPresenterToRouterProtocol: class {
     func showNewChat()
+    func showChatDetail() -> MyProtocol
 }
 
 protocol ChatListInteractorToPresenterProtocol: class {
@@ -25,4 +27,8 @@ protocol ChatListInteractorToPresenterProtocol: class {
 
 protocol ChatListViewToPresenterProtocol: class {
     func viewAppeared()
+}
+
+protocol ChatListFireBaseProtocol: class{
+    func recievedThreadList(threadListResponse: [String : AnyObject])
 }
